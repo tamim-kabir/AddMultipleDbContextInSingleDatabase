@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace TryToAddMultipleDBContext.Data.Migrations.ProductDatabse
+namespace AddMultipleDBContextInSingleDatabase.Data.Migrations.ProductDatabse
 {
     public partial class Initial : Migration
     {

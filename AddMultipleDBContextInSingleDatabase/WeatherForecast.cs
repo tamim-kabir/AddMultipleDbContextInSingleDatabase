@@ -1,4 +1,4 @@
-namespace TryToAddMultipleDBContext
+namespace AddMultipleDBContextInSingleDatabase
 {
     public class WeatherForecast
     {

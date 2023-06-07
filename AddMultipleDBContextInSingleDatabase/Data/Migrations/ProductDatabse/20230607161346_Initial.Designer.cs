@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TryToAddMultipleDBContext.Data;
+using AddMultipleDBContextInSingleDatabase.Data;
 
 #nullable disable
 
-namespace TryToAddMultipleDBContext.Data.Migrations.ProductDatabse
+namespace AddMultipleDBContextInSingleDatabase.Data.Migrations.ProductDatabse
 {
     [DbContext(typeof(ProductDbContext))]
     [Migration("20230607161346_Initial")]
@@ -23,7 +23,7 @@ namespace TryToAddMultipleDBContext.Data.Migrations.ProductDatabse
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("TryToAddMultipleDBContext.Models.Product", b =>
+            modelBuilder.Entity("AddMultipleDBContextInSingleDatabase.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

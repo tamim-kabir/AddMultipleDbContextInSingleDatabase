@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TryToAddMultipleDBContext.Data;
+using AddMultipleDBContextInSingleDatabase.Data;
 
 #nullable disable
 
-namespace TryToAddMultipleDBContext.Data.Migrations.ProductDatabse
+namespace AddMultipleDBContextInSingleDatabase.Data.Migrations.ProductDatabse
 {
     [DbContext(typeof(ProductDbContext))]
     partial class ProductDbContextModelSnapshot : ModelSnapshot
@@ -21,7 +21,7 @@ namespace TryToAddMultipleDBContext.Data.Migrations.ProductDatabse
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("TryToAddMultipleDBContext.Models.Brand", b =>
+            modelBuilder.Entity("AddMultipleDBContextInSingleDatabase.Models.Brand", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -37,7 +37,7 @@ namespace TryToAddMultipleDBContext.Data.Migrations.ProductDatabse
                     b.ToTable("Brand");
                 });
 
-            modelBuilder.Entity("TryToAddMultipleDBContext.Models.Product", b =>
+            modelBuilder.Entity("AddMultipleDBContextInSingleDatabase.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

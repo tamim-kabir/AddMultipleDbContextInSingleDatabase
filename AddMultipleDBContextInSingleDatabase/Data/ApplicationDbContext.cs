@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using TryToAddMultipleDBContext.Models;
+using AddMultipleDBContextInSingleDatabase.Models;
 
-namespace TryToAddMultipleDBContext.Data;
+namespace AddMultipleDBContextInSingleDatabase.Data;
 
 public class ApplicationDbContext : Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<ApplicationUser>
 {

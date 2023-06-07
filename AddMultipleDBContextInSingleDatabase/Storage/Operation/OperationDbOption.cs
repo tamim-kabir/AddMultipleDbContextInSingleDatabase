@@ -1,12 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TryToAddMultipleDBContext.Data;
+using AddMultipleDBContextInSingleDatabase.Data;
 #nullable enable
-namespace TryToAddMultipleDBContext.Storage.Operation
+namespace AddMultipleDBContextInSingleDatabase.Storage.Operation
 {
     public static class OperationDbOption
     {
-        public static IServiceCollection AddProductDbContext<TContext>(this IServiceCollection services,
-            Action<StorageOption>? storeOptionsAction = null)
+        public static IServiceCollection AddProductDbContext<TContext>(this IServiceCollection services, Action<StorageOption>? storeOptionsAction = null) 
             where TContext : DbContext, IProductDbContext
         {
             var storeOptions = new StorageOption();
@@ -55,10 +54,7 @@ namespace TryToAddMultipleDBContext.Storage.Operation
                     });
                 }
             }
-            
-
             services.AddScoped<IProductDbContext>(svcs => svcs.GetRequiredService<TContext>());
-
             return services;
         }
     }

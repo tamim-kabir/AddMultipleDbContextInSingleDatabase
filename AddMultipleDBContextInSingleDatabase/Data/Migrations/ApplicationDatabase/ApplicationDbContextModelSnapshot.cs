@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TryToAddMultipleDBContext.Data;
+using AddMultipleDBContextInSingleDatabase.Data;
 
 #nullable disable
 
-namespace TryToAddMultipleDBContext.Data.Migrations.ApplicationDatabase
+namespace AddMultipleDBContextInSingleDatabase.Data.Migrations.ApplicationDatabase
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -155,7 +155,7 @@ namespace TryToAddMultipleDBContext.Data.Migrations.ApplicationDatabase
                     b.ToTable("UserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("TryToAddMultipleDBContext.Models.ApplicationUser", b =>
+            modelBuilder.Entity("AddMultipleDBContextInSingleDatabase.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -258,7 +258,7 @@ namespace TryToAddMultipleDBContext.Data.Migrations.ApplicationDatabase
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("TryToAddMultipleDBContext.Models.ApplicationUser", null)
+                    b.HasOne("AddMultipleDBContextInSingleDatabase.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -267,7 +267,7 @@ namespace TryToAddMultipleDBContext.Data.Migrations.ApplicationDatabase
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("TryToAddMultipleDBContext.Models.ApplicationUser", null)
+                    b.HasOne("AddMultipleDBContextInSingleDatabase.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -282,7 +282,7 @@ namespace TryToAddMultipleDBContext.Data.Migrations.ApplicationDatabase
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TryToAddMultipleDBContext.Models.ApplicationUser", null)
+                    b.HasOne("AddMultipleDBContextInSingleDatabase.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -291,7 +291,7 @@ namespace TryToAddMultipleDBContext.Data.Migrations.ApplicationDatabase
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("TryToAddMultipleDBContext.Models.ApplicationUser", null)
+                    b.HasOne("AddMultipleDBContextInSingleDatabase.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

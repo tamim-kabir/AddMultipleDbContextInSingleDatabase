@@ -1,4 +1,4 @@
-﻿namespace TryToAddMultipleDBContext.Models
+﻿namespace AddMultipleDBContextInSingleDatabase.Models
 {
     public class Product
     {

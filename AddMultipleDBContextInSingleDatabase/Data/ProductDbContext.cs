@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using TryToAddMultipleDBContext.Models;
-using TryToAddMultipleDBContext.Storage;
+using AddMultipleDBContextInSingleDatabase.Models;
+using AddMultipleDBContextInSingleDatabase.Storage;
 
-namespace TryToAddMultipleDBContext.Data
+namespace AddMultipleDBContextInSingleDatabase.Data
 {
     
     public class ProductDbContext : ProductDb<ProductDbContext>

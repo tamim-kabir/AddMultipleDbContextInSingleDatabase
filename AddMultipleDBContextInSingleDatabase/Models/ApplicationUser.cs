@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace TryToAddMultipleDBContext.Models;
+namespace AddMultipleDBContextInSingleDatabase.Models;
 
 public class ApplicationUser : IdentityUser
 {

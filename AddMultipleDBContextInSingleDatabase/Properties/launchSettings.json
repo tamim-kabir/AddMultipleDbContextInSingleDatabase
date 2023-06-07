@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "TryToAddMultipleDBContext": {
+    "AddMultipleDBContextInSingleDatabase": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

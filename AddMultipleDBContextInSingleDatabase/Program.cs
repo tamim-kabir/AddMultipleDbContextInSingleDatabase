@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using TryToAddMultipleDBContext.Data;
-using TryToAddMultipleDBContext.Storage.Operation;
+using AddMultipleDBContextInSingleDatabase.Data;
+using AddMultipleDBContextInSingleDatabase.Storage.Operation;
 
 var builder = WebApplication.CreateBuilder(args);
 

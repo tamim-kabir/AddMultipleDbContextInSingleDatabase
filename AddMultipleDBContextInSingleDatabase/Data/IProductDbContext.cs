@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TryToAddMultipleDBContext.Models;
+using AddMultipleDBContextInSingleDatabase.Models;
 
-namespace TryToAddMultipleDBContext.Data
+namespace AddMultipleDBContextInSingleDatabase.Data
 {
     public interface IProductDbContext : IDisposable
     {

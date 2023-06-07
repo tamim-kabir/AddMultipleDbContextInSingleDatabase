@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace TryToAddMultipleDBContext.Controllers
+namespace AddMultipleDBContextInSingleDatabase.Controllers
 {
     [ApiController]
     [Route("[controller]")]

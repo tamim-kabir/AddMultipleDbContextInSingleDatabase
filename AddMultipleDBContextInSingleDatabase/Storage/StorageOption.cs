@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 #nullable enable
-namespace TryToAddMultipleDBContext.Storage
+namespace AddMultipleDBContextInSingleDatabase.Storage
 {
     public class StorageOption
     {    

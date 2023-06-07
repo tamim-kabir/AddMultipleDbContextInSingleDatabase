@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace TryToAddMultipleDBContext.Data.Migrations.ApplicationDatabase
+namespace AddMultipleDBContextInSingleDatabase.Data.Migrations.ApplicationDatabase
 {
     public partial class Initial : Migration
     {
