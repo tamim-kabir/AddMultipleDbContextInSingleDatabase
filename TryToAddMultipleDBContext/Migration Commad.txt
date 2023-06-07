@@ -1,0 +1,5 @@
+1. Application Databse migration add command
+Add-Migration Initial -c ApplicationDbContext -o Data/Migrations/ApplicationDatabase
+
+2. Product Databse migration add command
+Add-Migration Initial -c ProductDbContext -o Data/Migrations/ProductDatabse
