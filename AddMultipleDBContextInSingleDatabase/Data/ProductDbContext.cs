@@ -7,7 +7,7 @@ using AddMultipleDBContextInSingleDatabase.Storage;
 namespace AddMultipleDBContextInSingleDatabase.Data
 {
     
-    public class ProductDbContext : ProductDb<ProductDbContext>
+    public class ProductDbContext : ProductDbContext<ProductDbContext>
     {        
         public ProductDbContext(DbContextOptions<ProductDbContext> options)
             : base(options)
@@ -15,12 +15,12 @@ namespace AddMultipleDBContextInSingleDatabase.Data
         }
     }
   
-    public class ProductDb<TContext> : DbContext, IProductDbContext
+    public class ProductDbContext<TContext> : DbContext, IProductDbContext
         where TContext : DbContext, IProductDbContext
     {       
         public StorageOption StoreOptions { get; set; }
 
-        public ProductDb(DbContextOptions<TContext> options)
+        public ProductDbContext(DbContextOptions<TContext> options)
             : base(options)
         {
         }
